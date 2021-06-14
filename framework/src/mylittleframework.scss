@@ -1,30 +1,86 @@
-// gird system
+// reponsive layout
+
+
+// layout system
 .col {
-    
+
 }
 
-// main element
-.nav {
-    li {
-        float: left;
-        display: inline;
-        position: sticky;
-        width: 100%;
+.container {
+
+}
+
+.container {
+    &-fluid {}
+    &-fullscreen {
     }
 }
 
 
-// misc
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    h1, h2, p, a {
+        text-align: center;
+    }
+}
+
+.contain {
+    padding: 3rem 0 3rem 0;
+}
+
+
+// main element
+.nav {
+
+    float: left;
+    display: inline;
+    position: sticky;
+    width: 100%;
+    height: 3rem;
+
+    &-element {
+        &-link {
+            &-right {
+                float: right;
+            }
+            &-left {
+            float: left;
+            }
+            &-mid {}
+        }
+        &-logo {
+            float: left;
+        }
+    }
+}
+
+// misc - effect
+.blur {
+    backdrop-filter: blur(6px);
+}
+
+
+
+// misc - element
 .btn {
+    &-white {
+
+    }
+    &-blue {
+
+    }
 
 }
 
-.btn-white {
 
+// misic - utilty
+.sticky {
+    position: sticky;
+    &-top {
+    top: 0;
+    &-bot {
+        bottom: 0;
+    }
 }
-
-.btn-blue {
-
-}
-
-.btn
