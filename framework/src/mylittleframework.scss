@@ -2,7 +2,21 @@
 
 
 // themes
+@mixin fonts {
+    
+}
 
+@mixin theme_color {
+
+}
+
+@mixin no-margin {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin: 0 0 0 0;
+}
 // reponsive breakpoint for layout
 
 // https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/
@@ -18,7 +32,6 @@ $destop-big-width:1200px;
 
 
 .container {
-
     &-fluid {}
 
     &-fullscreen {}
@@ -27,14 +40,22 @@ $destop-big-width:1200px;
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     position: relative;
-
+    z-index: -1;
+    background-color: red;
     h1,
     h2,
     p,
     a {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+
         text-align: center;
+        vertical-align: middle;
+        line-height: 100vh;
     }
 }
 
@@ -45,11 +66,49 @@ $destop-big-width:1200px;
 
 
 // main element
+// https://www.w3schools.com/css/css_navbar_horizontal.asp
+// https://www.youtube.com/watch?v=PwWHL3RyQgk
+
+body {
+    margin: 0 0 0 0;
+}
+
+
 .nav {
-    display: inline;
     position: sticky;
-    width: 100%;
-    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    color: white;
+
+    ul {
+        display: inline-block;
+        list-style-type: disc;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 0 0 0;
+
+        a {
+
+            transition: color 0.3s ease 0s;
+            text-align: center;
+            text-decoration: none;
+        }
+        :hover > a {
+            //color: ;
+        }
+        :visited > a {
+            color: white;
+        }
+    }
 
     &-element {
         &-link {
@@ -65,9 +124,11 @@ $destop-big-width:1200px;
         }
 
         &-logo {
-            float: left;
+            cursor: pointer;
         }
     }
+
+
 }
 
 // misc - effect
@@ -85,10 +146,9 @@ $destop-big-width:1200px;
 	border-radius:23px;
 	border:2px solid #a8a8a8;
 	display:inline-block;
-	cursor:pointer;
+	cursor: pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
 	padding:10px 16px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #666666;
@@ -98,8 +158,6 @@ $destop-big-width:1200px;
     }
 
     :active > &  {
-        position:relative;
-        top:1px;
     }
 
     &-white { }
@@ -111,6 +169,7 @@ $destop-big-width:1200px;
 // misic - utilty
 .sticky {
     position: sticky;
+    z-index: 9;
     &-top {
         top: 0;
     }
@@ -118,3 +177,8 @@ $destop-big-width:1200px;
         bottom: 0;
     }
 }
+
+.center {
+    margin: auto;
+    padding: 10px;
+  }
