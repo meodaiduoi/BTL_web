@@ -3,7 +3,7 @@
 
 // themes
 @mixin fonts {
-    
+
 }
 
 @mixin theme_color {
@@ -15,10 +15,11 @@
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
+    padding-inline-start: 0;
     margin: 0 0 0 0;
 }
-// reponsive breakpoint for layout
 
+// reponsive breakpoint for layout
 // https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/
 // https://stackoverflow.com/questions/36229356/whats-the-equivalent-of-the-container-bootstrap-class-in-purecss-io
 // https://css-tricks.com/approaches-media-queries-sass/
@@ -48,20 +49,17 @@ $destop-big-width:1200px;
     h2,
     p,
     a {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
+        @include  no-margin;
 
         text-align: center;
         vertical-align: middle;
-        line-height: 100vh;
+        line-height: 70vh;
     }
 }
 
 .content {
-    margin: 0;
-    padding: 3rem 0 3rem 0;
+    @include no-margin;
+    padding: 3rem 3rem 3rem 3rem;
 }
 
 
@@ -70,7 +68,7 @@ $destop-big-width:1200px;
 // https://www.youtube.com/watch?v=PwWHL3RyQgk
 
 body {
-    margin: 0 0 0 0;
+    @include  no-margin;
 }
 
 
@@ -83,13 +81,7 @@ body {
     color: white;
 
     ul {
-        display: inline-block;
-        list-style-type: disc;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-        padding-inline-start: 0;
+        @include  no-margin;
     }
 
     li {
