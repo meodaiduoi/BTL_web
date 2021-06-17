@@ -23,8 +23,6 @@
 // https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/
 // https://stackoverflow.com/questions/36229356/whats-the-equivalent-of-the-container-bootstrap-class-in-purecss-io
 // https://css-tricks.com/approaches-media-queries-sass/
-$phone-width: 640px;
-$tablet-width: 768px;
 
 //https://responsivedesign.is/develop/getting-started-with-sass-and-breakpoint-mixin/
 
@@ -36,6 +34,7 @@ $tablet: 768px;
 $tablet-lg: 1024px;
 $desktop: 1025px;
 $desktop-lg: 1600px;
+
 //Landon Schropp breakpoint method
 //https://davidwalsh.name/write-media-queries-sass
 @mixin bp_phone-sm {
