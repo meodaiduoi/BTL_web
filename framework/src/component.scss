@@ -1,0 +1,112 @@
+@import "./misc_mixin.scss";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    color: white;
+    position: sticky;
+    height: 10vh;
+
+    ul {
+        @include  no-margin;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 0 0 0;
+
+        a {
+
+            transition: color 0.3s ease 0s;
+            text-align: center;
+            text-decoration: none;
+        }
+        :hover > a {
+            //color: ;
+        }
+        :visited > a {
+            color: white;
+        }
+    }
+
+    &-element {
+        &-link {
+            &-right {
+                float: right;
+            }
+
+            &-left {
+                float: left;
+            }
+
+            // &-mid {}
+        }
+
+        &-logo {
+            cursor: pointer;
+        }
+    }
+    @include bp_tablet {
+        &-submenu {
+            display: block;
+        }
+    }
+}
+
+
+// https://www.bestcssbuttongenerator.com/#/0
+.btn {
+	background-color:transparent;
+	border-radius:23px;
+	border:2px solid #a8a8a8;
+	display:inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	font-family:Arial;
+	padding:10px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #666666;
+
+    :hover > & {
+        background-color:transparent;
+    }
+
+    :active > &  {
+    }
+
+    &-white { }
+
+    &-blue { }
+}
+
+.scrollbar {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* Track */
+        ::-webkit-scrollbar-track {
+        background: #ebebeb; 
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+    &-style {
+        &-rectangle {
+
+        }
+        &-round {
+
+        }
+    }
+}

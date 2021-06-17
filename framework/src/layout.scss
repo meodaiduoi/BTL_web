@@ -1,0 +1,102 @@
+// screen size breakpoint
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+//Landon Schropp breakpoint method
+//https://davidwalsh.name/write-media-queries-sass
+@mixin bp_phone-sm {
+    @media (min-width: #{$xs}) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+@mixin bp_tablet {
+    @media (min-width: #{$md}) {
+        @content;
+    }
+}
+@mixin bp_tablet-lg {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+@mixin bp_destop {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin bp_destop-lg {
+    @media (min-width: #{$xxl}) {
+        @content;
+    }
+}
+
+
+
+// layout system
+.row {
+    &-col {
+        &-col {
+
+        }
+    }
+}
+
+
+.container {
+    @include no-margin;
+
+    @include bp_phone-sm {
+        width: 100%;
+    }
+    @include bp_phone {
+        width: 540px;;
+    }
+    @include bp_tablet {
+        max-width: 720px;
+    }
+    @include bp_tablet-lg() {
+        max-width: 960px;
+    }
+    @include bp_destop {
+        max-width: 1140px;
+    }
+    @include bp_destop-lg {
+        max-width: 1320px;
+    }
+
+    &-fluid { max-width: 100%; }
+}
+
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    z-index: -1;
+    background-color: red;
+    h1,
+    h2,
+    p,
+    a {
+        @include  no-margin;
+
+        text-align: center;
+        vertical-align: middle;
+        line-height: 70vh;
+    }
+}
+
+.content {
+    @include no-margin;
+    padding: 3rem 3rem 3rem 3rem;
+}
