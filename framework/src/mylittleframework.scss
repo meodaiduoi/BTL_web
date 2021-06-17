@@ -25,17 +25,66 @@
 // https://css-tricks.com/approaches-media-queries-sass/
 $phone-width: 640px;
 $tablet-width: 768px;
-$desktop-width: 1024px;
-$destop-big-width:1200px;
+
+//https://responsivedesign.is/develop/getting-started-with-sass-and-breakpoint-mixin/
+
+
+// screen size breakpoint
+$phone-sm: 420px;
+$phone: 767px;
+$tablet: 768px;
+$tablet-lg: 1024px;
+$desktop: 1025px;
+$desktop-lg: 1600px;
+//Landon Schropp breakpoint method
+//https://davidwalsh.name/write-media-queries-sass
+@mixin bp_phone-sm {
+    @media (min-width: #{$phone-sm}) {
+        @content;
+    }
+}
+@mixin bp_phone {
+    @media (min-width: #{$phone}) {
+        @content;
+    }
+}
+@mixin bp_tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin bp_tablet-lg {
+    @media (min-width: #{$tablet=lg}) {
+        @content;
+    }
+}
+@mixin bp_destop {
+    @media (min-width: #{$destop}) {
+        @content;
+    }
+}
+
+@mixin bp_destop-lg {
+    @media (min-width: #{$destop-lg}) {
+        @content;
+    }
+}
+
 
 // layout system
-.col {}
+.row {
+    &-col {
+        &-col {
+
+        }
+    }
+}
 
 
 .container {
-    &-fluid {}
 
-    &-fullscreen {}
+
+    &-fluid {}
 }
 
 
@@ -119,8 +168,6 @@ body {
             cursor: pointer;
         }
     }
-
-
 }
 
 // misc - effect
