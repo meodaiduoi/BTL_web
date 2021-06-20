@@ -70,3 +70,28 @@
         }
     }
 }
+
+.flexbox {
+    display: flex;
+    &-left {
+        justify-content: left;
+    }
+    &-right {
+        justify-content: right;
+    }
+    &-ceter {
+        justify-content: center;
+    }
+    &-baseline {
+        justify-content: baseline;
+    }
+    &-space_around {
+        justify-content: space-around;
+    }
+    &-space_evenly {
+        justify-content: space-evenly;
+    }
+    &-space_between {
+        justify-content: space-between;
+    }
+}

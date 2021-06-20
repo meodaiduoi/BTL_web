@@ -1,58 +1,43 @@
 @import "./misc_mixin.scss";
+@import "./layout.scss";
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #24252a;
-    color: white;
-    position: sticky;
-    height: 10vh;
-
-    ul {
-        @include  no-margin;
-    }
-
-    li {
-        display: inline-block;
-        margin: 0 0 0 0;
-
-        a {
-
-            transition: color 0.3s ease 0s;
-            text-align: center;
-            text-decoration: none;
-        }
-        :hover > a {
-            //color: ;
-        }
-        :visited > a {
-            color: white;
-        }
-    }
-
-    &-element {
-        &-link {
-            &-right {
-                float: right;
+    height: 60px;
+    width: 100%;
+    &-link {
+        text-align: center;
+        color: #EDEDED;
+        .items {
+            a {
+                text-decoration: none;
             }
-
-            &-left {
-                float: left;
+            :hover > a {
+                //color: ;
             }
-
-            // &-mid {}
-        }
-
-        &-logo {
-            cursor: pointer;
+            :visited {
+                color: white;
+            }
         }
     }
-    @include bp_tablet {
-        &-submenu {
-            display: block;
-        }
+
+    &-logo {
+        margin: 12px 0 auto 0;
     }
+
+    &-button {
+
+    }
+
+
+    &-light {
+        background-color: #EDEDED;
+        color: #171717;
+    }
+    &-dark {
+        background-color: #171717;
+
+    }
+
 }
 
 
@@ -93,7 +78,7 @@
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
     }
 
     /* Handle on hover */
@@ -107,6 +92,14 @@
         }
         &-round {
 
+        }
+    }
+    &-hamburger {
+        @include bp_phone {
+            display: none;
+        }
+        @include bp_tablet {
+            display: inline-block;
         }
     }
 }

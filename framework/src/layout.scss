@@ -1,3 +1,5 @@
+@import  "./misc_mixin.scss";
+
 // screen size breakpoint
 $xs: 0px;
 $sm: 576px;
@@ -13,7 +15,7 @@ $xxl: 1400px;
         @content;
     }
 }
-@mixin phone {
+@mixin bp_phone {
     @media (min-width: #{$sm}) {
         @content;
     }
@@ -44,22 +46,21 @@ $xxl: 1400px;
 
 // layout system
 .row {
-    &-col {
-        &-col {
 
-        }
+    &-col {
+
     }
 }
 
 
 .container {
-    @include no-margin;
+    margin: 0 auto;
 
     @include bp_phone-sm {
         width: 100%;
     }
     @include bp_phone {
-        width: 540px;;
+        max-width: 540px;;
     }
     @include bp_tablet {
         max-width: 720px;
@@ -93,6 +94,11 @@ $xxl: 1400px;
         text-align: center;
         vertical-align: middle;
         line-height: 70vh;
+    }
+    img {
+        &-bg-1 {
+
+        }
     }
 }
 
