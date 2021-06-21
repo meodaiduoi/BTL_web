@@ -495,38 +495,10 @@
   background-color: transparent;
 }
 
-.scrollbar {
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-
-.scrollbar ::-webkit-scrollbar {
-  width: 12px;
-}
-
-.scrollbar ::-webkit-scrollbar-track {
-  background: #ebebeb;
-}
-
-.scrollbar ::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-@media (min-width: 576px) {
-  .scrollbar-hamburger {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .scrollbar-hamburger {
-    display: inline-block;
-  }
+hr {
+  border: 0;
+  border-top: 0.1rem solid #f4f5f6;
+  margin: 3.0rem 0;
 }
 
 img {
