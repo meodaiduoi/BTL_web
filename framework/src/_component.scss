@@ -1,5 +1,3 @@
-@import "./misc_mixin.scss";
-@import "./layout.scss";
 
 .nav {
     height: 60px;
@@ -11,9 +9,7 @@
             a {
                 text-decoration: none;
             }
-            :hover > a {
-                //color: ;
-            }
+
             :visited {
                 color: white;
             }
@@ -102,4 +98,22 @@
             display: inline-block;
         }
     }
+}
+
+// devider
+// hr {
+//   border: 0;
+//   border-top: .1rem solid $color-tertiary;
+//   margin: 3.0rem 0;
+// }
+
+img {
+    max-width: 100%;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:focus, &:hover { color: $color-secondary; }
 }

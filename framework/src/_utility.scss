@@ -95,3 +95,17 @@
         justify-content: space-between;
     }
 }
+
+.clearfix {
+    &:after {
+        clear: both;
+        content: ' '; // The space content is one way to avoid an Opera bug.
+        display: table;
+    }
+}
+
+// Float either direction
+.float {
+    &-left { float: left; }
+    &-right { float: right; }
+}
