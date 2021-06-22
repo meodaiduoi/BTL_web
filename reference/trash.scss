@@ -1,0 +1,29 @@
+@include bp_phone-sm {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}
+
+@include bp_phone {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}
+
+@include bp_tablet {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}
+
+@include bp_tablet-lg {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}
+
+@include bp_destop {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}
+
+@include bp_destop-lg {
+    p, a { font-size: ; }
+    h1, h2, h3, h4, h5, h6 { font-size: ; }
+}

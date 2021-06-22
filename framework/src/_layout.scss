@@ -82,6 +82,31 @@ $xxl: 1400px;
     padding: 3rem 0 3rem 0;
 }
 
+.title-block {
+    &-fixed {
+
+    }
+    &-relative {
+
+    }
+}
+
+.footer {
+    &-sector {
+        &-top {
+            h1, h2, h3, h4, h5 {
+                @include bp_phone-sm { text-align: center; }
+                @include bp_tablet-lg { text-align: left; }
+            }
+        }
+        &-mid {
+
+        }
+        &-bot {
+
+        }
+    }
+}
 
 // grid system
 .container {
@@ -89,10 +114,10 @@ $xxl: 1400px;
     position: relative;
 
     @include bp_phone-sm {
-        width: 100%;
+        max-width: 90%;
     }
     @include bp_phone {
-        max-width: 540px;;
+        max-width: 540px;
     }
     @include bp_tablet {
         max-width: 720px;
