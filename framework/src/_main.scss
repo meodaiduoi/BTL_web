@@ -1,8 +1,9 @@
-body { 
+body {
+    //normalizer
     @include no-margin;
 }
 
-// custom scrollbar
+// scrollbar
 ::-webkit-scrollbar {
     height: 12px;
     width: 14px;

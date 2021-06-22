@@ -254,7 +254,7 @@ $xxl: 1400px;
         // Larger than mobile screen
     }
 }
-@include bp_custom(40 rem) {
+@include bp_tablet {
     .row {
         flex-direction: row;
         margin-left: -1.0rem;

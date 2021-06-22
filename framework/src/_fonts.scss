@@ -8,32 +8,33 @@ body {
     font-family: 'Montserrat', sans-serif;
     src: url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');");
 
-    font-family: 'Montserrat', sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap");
+    font-family: 'Work Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap');
 }
 
-// fonts
-b, strong .text-strong {
-    font-weight: bold;
-}
 
-.text-oblique {
-    font-style: oblique;
-}
 
-.text-italic {
-    font-style: italic;
-}
-
-// font reponsive
+// reponsive font size
+// link and paragraph setting
 p, a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.28rem;
+    font-size: 1.55rem;
 
     margin-top: 0;
 }
 
+a {
+    color: $color-primary;
+    text-decoration: none;
+    &:focus, &:hover { color: $color-secondary; }
+}
+
+b, strong .text-strong {
+    font-weight: bold;
+}
+
+// header
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -44,17 +45,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 1.2;
 }
 
 h2 {
-    font-size: 3.1rem;
+    font-size: 2.9rem;
     line-height: 1.25;
 }
 
 h3 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     line-height: 1.3;
 }
 
@@ -65,13 +66,13 @@ h4 {
 }
 
 h5 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     letter-spacing: -.05rem;
     line-height: 1.5;
 }
 
 h6 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     letter-spacing: 0;
     line-height: 1.4;
 }
