@@ -1,3 +1,13 @@
+// breakpoint map
+$breakpoint: (
+    "xs": 0px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+);
+
 .blur {
     backdrop-filter: blur(6px);
 }
@@ -27,15 +37,30 @@
 }
 
 .text {
-    &-left {
-        text-align: left;
+    $align: (
+        "left": left,
+        "right": right,
+        "center": center
+    );
+
+    &_algin {
+        @each $align_name, $pos in $align {
+            &-#{$align_name} {
+                text-align: $pos;
+            }
+        }
+
+        @each $bp_name, $bp in $breakpoint {
+            @each $align_name, $pos in $align {
+                &-#{$bp_name}-#{$align_name} {
+                    @media (min-width: #{$bp}) {
+                        text-align: $pos;
+                    }
+                }
+            }
+        }
     }
-    &-right {
-        text-align: right;
-    }
-    &-center {
-        text-align: center;
-    }
+
     &-oblique {
         font-style: oblique;
     }
@@ -89,28 +114,72 @@
     }
 }
 
+
+
+
+// Float either direction
+.float {
+    &-left { float: left; }
+    &-right { float: right; }
+}
+
+.item_align {
+
+    $item-align: (
+        "stretch": stretch,
+        "center": center,
+        "flex-start": flex-start,
+        "flex-end": flex-end,
+        "baseline": baseline,
+        "initial": initial,
+        "inherit": inherit
+    );
+
+    @each $align_name, $align in $item-align {
+        &-#{$align_name} {
+            align-items: $align;
+        }
+    }
+
+    @each $bp_name, $bp in $breakpoint {
+        @each $align_name, $align in $item-align {
+            &-#{$bp_name}-#{$align_name} {
+                @media (min-width: #{$bp}) {
+                    align-items: $align;
+                }
+            }
+        }
+    }
+}
+
 .flexbox {
+
     display: flex;
-    &-left {
-        justify-content: left;
+
+    $justify: (
+        "left": left,
+        "right": right,
+        "center": center,
+        "baseline": baseline,
+        "space-around": space-around,
+        "space-evenly": space-evenly,
+        "space-between": space-between,
+    );
+
+    @each $justify_name, $justitfy in $justify {
+        &-#{$justify_name} {
+            justify-content: $justitfy;
+        }
     }
-    &-right {
-        justify-content: right;
-    }
-    &-ceter {
-        justify-content: center;
-    }
-    &-baseline {
-        justify-content: baseline;
-    }
-    &-space_around {
-        justify-content: space-around;
-    }
-    &-space_evenly {
-        justify-content: space-evenly;
-    }
-    &-space_between {
-        justify-content: space-between;
+
+    @each $bp_name, $bp in $breakpoint {
+        @each $justify_name, $justitfy in $justify {
+            &-#{$bp_name}-#{$justify_name} {
+                @media (min-width: #{$bp}) {
+                    justify-content: $justitfy;
+                }
+            }
+        }
     }
 }
 
@@ -120,10 +189,4 @@
         content: ' '; // The space content is one way to avoid an Opera bug.
         display: table;
     }
-}
-
-// Float either direction
-.float {
-    &-left { float: left; }
-    &-right { float: right; }
 }
