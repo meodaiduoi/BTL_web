@@ -31,18 +31,21 @@
 }
 
 .content {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  margin: 0 0 0 0;
   padding: 3rem 0 3rem 0;
+}
+
+.title-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-block-fixed {
+  background-attachment: fixed;
+}
+
+.title-block-scroll {
+  background-attachment: scroll;
 }
 
 @media (min-width: 0px) {
@@ -1479,7 +1482,7 @@ body {
 
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  src: url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');");
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&display=swap");
   font-family: 'Work Sans', sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap");
 }
@@ -1506,10 +1509,17 @@ b, strong .text-strong {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.02rem;
   margin-bottom: 2.0rem;
   margin-top: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+h4, h5, h6 {
+  font-weight: 800;
 }
 
 h1 {

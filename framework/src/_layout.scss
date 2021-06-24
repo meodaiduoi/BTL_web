@@ -49,7 +49,7 @@ $xxl: 1400px;
     }
 }
 
-// layout system
+// section layout system
 .hero {
     width: 100%;
     position: relative;
@@ -73,17 +73,21 @@ $xxl: 1400px;
     }
 }
 
+
 .content {
-    @include no-margin;
     padding: 3rem 0 3rem 0;
 }
 
 .title-block {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     &-fixed {
-
+        background-attachment: fixed;
     }
-    &-relative {
-
+    &-scroll {
+        background-attachment: scroll;
     }
 }
 
