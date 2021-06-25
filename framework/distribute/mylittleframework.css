@@ -34,17 +34,21 @@
   padding: 3rem 0 3rem 0;
 }
 
-.title-block {
+.content-title {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.title-block-fixed {
+.content-title h1, .content-title h2, .content-title h3, .content-title h4, .content-title h5, .content-title h6 {
+  margin-bottom: 0;
+}
+
+.content-title.fixed {
   background-attachment: fixed;
 }
 
-.title-block-scroll {
+.content-title.scroll {
   background-attachment: scroll;
 }
 

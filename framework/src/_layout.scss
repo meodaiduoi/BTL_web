@@ -76,20 +76,22 @@ $xxl: 1400px;
 
 .content {
     padding: 3rem 0 3rem 0;
+
+    &-title {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        h1, h2, h3, h4, h5, h6 { margin-bottom: 0; }
+        &.fixed {
+            background-attachment: fixed;
+        }
+        &.scroll {
+            background-attachment: scroll;
+        }
+    }
 }
 
-.title-block {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    &-fixed {
-        background-attachment: fixed;
-    }
-    &-scroll {
-        background-attachment: scroll;
-    }
-}
 
 .footer {
     &-sector {
