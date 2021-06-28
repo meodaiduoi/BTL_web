@@ -75,7 +75,7 @@ $xxl: 1400px;
 
 
 .content {
-    padding: 3rem 0 3rem 0;
+    padding: 4rem 0 4rem 0;
 
     &-title {
         background-size: cover;
@@ -94,20 +94,20 @@ $xxl: 1400px;
 
 
 .footer {
-    &-sector {
-        &-top {
-            h1, h2, h3, h4, h5 {
-                @include bp_phone-sm { text-align: center; }
-                @include bp_tablet-lg { text-align: left; }
-            }
-        }
-        &-mid {
-
-        }
-        &-bot {
-
+    padding: 2.4rem 0 2.4rem 0;
+    & .top {
+        padding-bottom: 2.4rem;
+        h1, h2, h3, h4, h5 {
+            @include bp_phone-sm { text-align: center; }
+            @include bp_tablet-lg { text-align: left; }
         }
     }
+    & .mid {
+        padding-bottom: 2.4rem;
+    }
+    & .bot {
+    }
+
 }
 
 // grid system
@@ -142,6 +142,7 @@ $xxl: 1400px;
     flex-direction: column;
     padding: 0;
     width: 100%;
+    word-wrap: break-word;
 
     &.row-no-padding {
       padding: 0;

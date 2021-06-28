@@ -40,6 +40,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
+
+    //
     background-color: $color-primary;
     border: .1rem solid $color-primary;
     border-radius: .4rem;
@@ -59,6 +61,7 @@ input[type='submit'] {
 
     &:focus,
     &:hover {
+
         background-color: $color-secondary;
         border-color: $color-secondary;
         color: $color-initial;
@@ -68,14 +71,18 @@ input[type='submit'] {
         cursor: default;
         opacity: .5;
 
-    &:focus,
-    &:hover {
-        background-color: $color-primary;
-        border-color: $color-primary;
-        }
+        &:focus,
+        &:hover {
+
+            //
+            background-color: $color-primary;
+            border-color: $color-primary;
+            }
     }
 
     &.button-outline {
+
+            //
             background-color: transparent;
             color: $color-primary;
 

@@ -128,11 +128,9 @@ $breakpoint: (
     $item-align: (
         "stretch": stretch,
         "center": center,
-        "flex-start": flex-start,
-        "flex-end": flex-end,
         "baseline": baseline,
         "initial": initial,
-        "inherit": inherit
+        "inherit": inherit,
     );
 
     @each $align_name, $align in $item-align {
@@ -164,6 +162,8 @@ $breakpoint: (
         "space-around": space-around,
         "space-evenly": space-evenly,
         "space-between": space-between,
+        "flex-start": flex-start,
+        "flex-end": flex-end
     );
 
     @each $justify_name, $justitfy in $justify {

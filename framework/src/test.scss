@@ -1,0 +1,26 @@
+$breakpoint: (
+    "xs": 0px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+);
+
+$width: 90%, 540px, 720px, 960px, 1140px, 1320px;
+
+.container {
+    @each $bp_name, $bp in $breakpoint {
+        @for $i from 6 through 1 {
+            $n: 0;
+            @each $size in $width {
+                @if $n < 
+                    &-#{$size} {
+                        @media (min-width: #{$bp}) {
+                            max-width: $size;
+                        }
+                    }
+            }
+        }
+    }
+}
