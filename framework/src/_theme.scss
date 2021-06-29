@@ -85,12 +85,11 @@ $color-quinary: #e1e1e1 !default;
 
 
 
-// .background, .bg {
-//     &-dark {
-//         background-color: ;
-//     }
-
-//     &-light {
-//         background-color: ;
-//     }
-// }
+.background, .bg {
+    &-dark {
+        background-color: #363636;
+    }
+    // &-light {
+    //     background-color: ;
+    // }
+}

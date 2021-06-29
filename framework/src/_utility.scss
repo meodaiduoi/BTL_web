@@ -67,6 +67,15 @@ $breakpoint: (
     &-italic {
         font-style: italic;
     }
+
+    &_color {
+        &-white {
+            color: whitesmoke;
+        }
+        &-black {
+        }
+
+    }
 }
 
 .overflow {

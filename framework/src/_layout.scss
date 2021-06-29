@@ -76,7 +76,7 @@ $xxl: 1400px;
 
 .content {
     padding: 4rem 0 4rem 0;
-
+    margin: 0 auto;
     &-title {
         background-size: cover;
         background-repeat: no-repeat;
@@ -104,8 +104,18 @@ $xxl: 1400px;
     }
     & .mid {
         padding-bottom: 2.4rem;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            li {
+                padding: 0 0 1rem 0;
+            }
+        }
     }
     & .bot {
+        .icon {
+            padding: 0 2rem 0 2rem;
+        }
     }
 
 }
