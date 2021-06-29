@@ -32,6 +32,7 @@
 
 .content {
   padding: 4rem 0 4rem 0;
+  margin: 0 auto;
 }
 
 .content-title {
@@ -74,6 +75,19 @@
 
 .footer .mid {
   padding-bottom: 2.4rem;
+}
+
+.footer .mid ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer .mid ul li {
+  padding: 0 0 1rem 0;
+}
+
+.footer .bot .icon {
+  padding: 0 2rem 0 2rem;
 }
 
 .container {
@@ -303,6 +317,10 @@
   }
 }
 
+.background-dark, .bg-dark {
+  background-color: #363636;
+}
+
 .blur {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
@@ -461,6 +479,10 @@
 
 .text-italic {
   font-style: italic;
+}
+
+.text_color-white {
+  color: whitesmoke;
 }
 
 .overflow-auto {
@@ -1583,5 +1605,9 @@ h6 {
 .icon-big {
   padding: 0rem 0 3rem 0;
   font-size: 6rem;
+}
+
+.icon-medium {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=mylittleframework.css.map */
