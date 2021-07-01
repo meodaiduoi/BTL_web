@@ -53,24 +53,35 @@ $xxl: 1400px;
 .hero {
     width: 100%;
     position: relative;
-    z-index: -1;
     background-color: red;
-    height: 90vh;
-    @include no-margin;
-
-    @include bp_phone-sm {
-        text-align: center;
+    padding: 20vh 0 20vh 0;
+    top: -3px;
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0 0 3rem 0;
     }
 
-    @include bp_destop {
-        text-align: left;
-    }
-
-    img {
-        &-bg-1 {
-
+    &-background, &-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        h1, h2, h3, h4, h5, h6 { margin-bottom: 0; }
+        &.fixed {
+            background-attachment: fixed;
+        }
+        &.scroll {
+            background-attachment: scroll;
         }
     }
+
+    &-content {
+        text-decoration: none;
+        color:white;
+    }
+
+    &-btn_box {
+        width: 20px;
+    }
+
 }
 
 
@@ -94,19 +105,20 @@ $xxl: 1400px;
 
 
 .footer {
-    padding: 2.4rem 0 2.4rem 0;
+    padding: 2rem 0 2rem 0;
     & .top {
-        padding-bottom: 2.4rem;
+        padding-bottom: 1.5rem;
         h1, h2, h3, h4, h5 {
             @include bp_phone-sm { text-align: center; }
             @include bp_tablet-lg { text-align: left; }
         }
     }
     & .mid {
-        padding-bottom: 2.4rem;
+        padding-bottom: 1.5rem;
         ul {
             list-style-type: none;
             margin: 0;
+            padding: 0;
             li {
                 padding: 0 0 1rem 0;
             }
