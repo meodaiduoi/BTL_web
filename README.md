@@ -4,9 +4,13 @@ Xây dựng một trang web theo một mẫu có sẵn hoặc tạo mới, ở �
 Để phục vụ dự án, chúng em đã xây dựng một bộ thư viện trên mã scss để phục vụ việc soát lỗi và đọc code dễ dàng hơn. Bộ thư viện được xây dựng theo hướng module cùng với các class có khả năng tái sử dụng cao. 
 
 ✅ Reponsive layout 
+
 ✅ Reponsive Typography system 
+
 ✅ Reponsive Utility 
+
 ✅ Reponsive Component 
+
 ✅ Custom Scrollbar 
 
 ## Usage
