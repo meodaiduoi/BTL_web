@@ -24,13 +24,13 @@ CLI:
 
     gh repo clone meodaiduoi/BTL_web
 
-Hoặc preview trực tiếp dự án qua đường link [ponyvs.monster](http://ponyvs.monster)
+Hoặc preview trực tiếp dự án qua đường link [meodaiduoi.github.io/BTL_web/index.html](https://meodaiduoi.github.io/BTL_web/index.html)
 
 **Mọi tài liệu được sử dụng trong dự án đã được đính kèm trong github**
 
-Nhóm:
+## Nhóm:
 Phạm Hoàng Đăng Trung - 1551664 
 
 Nguyễn Đỗ Lân
 
-Trần Hoàng
+Nguyễn Trần Hoàng - 1521164
