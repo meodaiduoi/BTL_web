@@ -27,3 +27,8 @@ CLI:
 Hoặc preview trực tiếp dự án qua đường link [ponyvs.monster](http://ponyvs.monster)
 
 **Mọi tài liệu được sử dụng trong dự án đã được đính kèm trong github**
+
+Nhóm:
+Phạm Hoàng Đăng Trung - 1551664 
+Nguyễn Đỗ Lân
+Trần Hoàng
